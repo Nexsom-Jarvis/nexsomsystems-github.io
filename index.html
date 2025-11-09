@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexSom Systems — Technical Documentation and System Architecture Overview" />
+  <title>NexSom Systems | Documentation</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Core Styles -->
+  <style>
+    :root {
+      --brand-primary: #071834;
+      --brand-electric: #00B3FF;
+      --brand-surface: #0B1A2A;
+      --text-primary: #E6F2FF;
+      --text-muted: #9FB2C9;
+      --font-display: "Rajdhani", "Inter", system-ui, sans-serif;
+      --font-ui: "Inter", system-ui, sans-serif;
+      --font-mono: "Fira Code", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--brand-primary);
+      color: var(--text-primary);
+      font-family: var(--font-ui);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    main {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .status {
+      font-family: var(--font-mono);
+      color: var(--brand-electric);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      width: 80px;
+      height: 2px;
+      background: var(--brand-electric);
+      margin: 1.5rem auto;
+      opacity: 0.5;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1.2rem;
+      width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .glow {
+      animation: glowPulse 2.4s infinite ease-in-out;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { text-shadow: 0 0 4px var(--brand-electric), 0 0 12px var(--brand-electric); opacity: 1; }
+      50% { text-shadow: 0 0 2px var(--brand-electric); opacity: 0.7; }
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      background: var(--brand-electric);
+      animation: blink 1.2s infinite steps(1);
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.6rem; }
+      p { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 class="glow">NexSom Systems</h1>
+    <div class="status">[ Core Documentation Node Initializing<span class="cursor"></span> ]</div>
+    <div class="divider"></div>
+    <p>
+      Systems Configuration: <strong>Stable</strong><br />
+      Build: <strong>v0.0.1-docs</strong><br /><br />
+      Welcome to the NexSom documentation repository.  
+      Core initialization of architecture and framework details is currently underway.
+    </p>
+  </main>
+
+  <footer>
+    © 2025 NexSom Systems — All Rights Reserved
